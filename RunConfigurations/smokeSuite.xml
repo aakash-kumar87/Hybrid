@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Smoke" thread-count="5" parallel="instances">
+	<test name="Test">
+		<parameter name="environment" value="chrome" />
+		<parameter name="SeleniumGrid" value="true"></parameter>
+		<parameter name="platform" value="win10"></parameter>
+		<groups>
+			<run>
+				<include name="smoke" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.curriculum.testscripts"></package>
+		</packages>
+	</test>
+</suite>

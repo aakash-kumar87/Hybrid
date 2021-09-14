@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parallel" thread-count="2" parallel="tests">
+	<test name="chromeTest">
+		<parameter name="environment" value="chrome" />
+		<parameter name="SeleniumGrid" value="true"></parameter>
+		<parameter name="platform" value="mac"></parameter>
+		<groups>
+			<run>
+				<include name="regression" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.curriculum.testscripts.programpage.GeneralVerifications" />
+		</classes>
+	</test>
+	<test name="firefoxTest">
+		<parameter name="environment" value="firefox" />
+		<parameter name="SeleniumGrid" value="true"></parameter>
+		<parameter name="platform" value="mac"></parameter>
+		<groups>
+			<run>
+				<include name="regression" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.curriculum.testscripts.programpage.GeneralVerifications" />
+		</classes>
+	</test>
+</suite>
+

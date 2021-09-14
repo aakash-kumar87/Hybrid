@@ -1,0 +1,54 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite1" verbose="1" parallel="none">
+		<test name="UOWTest" preserve-order="true">
+			     <parameter name="environment" value="chrome"/>
+	     <parameter name="url" value="UOWQA"/>
+		  <groups>
+			<run>
+				<include name="regression"/>
+				<include name="smoke" />
+			</run>
+		</groups>
+		<classes>
+	<!--	<class name="com.lifecycle.source.SheetsQuickstart" /> -->
+		    <class name="com.lifecycle.testscripts.uow.CreateAI" > 
+		     <methods>
+     		     <include name="createCourseUOW"/>
+     		     </methods>
+     		</class> 
+     		<class name="com.lifecycle.testscripts.uow.Navigation" >
+     		     <methods>
+     		     <include name="navigateToCourseInfo"/>
+     		     </methods>
+     		</class>
+            <class name="com.lifecycle.testscripts.uow.CourseInfoSection1Validation" />
+        	<class name="com.lifecycle.testscripts.uow.CourseInfoSection2Validation" />  
+     	    <class name="com.lifecycle.testscripts.uow.CourseInfoSection3Validation" /> 
+        	<class name="com.lifecycle.testscripts.uow.CourseInfoSection4Validation" /> 
+     		<class name="com.lifecycle.testscripts.uow.CourseInfoSection5Validation" />  
+     		<class name="com.lifecycle.testscripts.uow.CourseInfoSection6Validation" />
+            <class name="com.lifecycle.testscripts.uow.CourseInfoSection7Validation" />
+            <class name="com.lifecycle.testscripts.uow.CourseInfoSection8Validation" />
+            <class name="com.lifecycle.testscripts.uow.CourseInfoSection9Validation" /> 
+            <class name="com.lifecycle.testscripts.uow.CourseInfoSection10Validation" /> 
+            <class name="com.lifecycle.testscripts.uow.CourseInfoSection11Validation" /> 
+            <class name="com.lifecycle.testscripts.uow.CourseInfoSection12Validation" />  
+            <class name="com.lifecycle.testscripts.uow.CourseInfoSection13Validation" />  
+            <class name="com.lifecycle.testscripts.uow.CourseInfoSection14Validation" />
+            <class name="com.lifecycle.testscripts.uow.CourseInfoSection15Validation" />
+            <class name="com.lifecycle.testscripts.uow.CourseInfoSection16Validation" /> 
+            <class name="com.lifecycle.testscripts.uow.CourseInfoSection17Validation" /> 
+            <class name="com.lifecycle.testscripts.uow.CourseInfoSection18Validation" /> 
+            <class name="com.lifecycle.testscripts.uow.CourseInfoSection19Validation" /> 
+            <class name="com.lifecycle.testscripts.uow.CourseInfoSection20Validation" />  
+            <class name="com.lifecycle.testscripts.uow.CourseInfoSection21Validation" /> 
+        
+               
+		</classes>
+		</test>
+</suite>
+
+
+
+
+

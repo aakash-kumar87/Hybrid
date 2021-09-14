@@ -1,0 +1,33 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite1" verbose="1" parallel="none">
+		<test name="UOWTest" preserve-order="true">
+			     <parameter name="environment" value="chrome"/>
+	     <parameter name="url" value="UOWQA"/>
+		  <groups>
+			<run>
+				<include name="regression"/>
+				<include name="smoke" />
+			</run>
+		</groups>
+		<classes>
+	<!--	<class name="com.lifecycle.source.SheetsQuickstart" /> -->
+		    <class name="com.lifecycle.testscripts.uow.CreateAI" > 
+		    <methods>
+     		     <include name="createMajorUOW"/>
+     		     </methods>
+     		</class>
+     		<class name="com.lifecycle.testscripts.uow.Navigation" >
+     		     <methods>
+     		     <include name="navigateToMajorInfo"/>
+     		     </methods>
+     		</class>
+			<class name="com.lifecycle.testscripts.uow.MajorInfoSection1Validation" />
+			<class name="com.lifecycle.testscripts.uow.MajorInfoSection2Validation" />
+		</classes>
+		</test>
+</suite>
+
+
+
+
+

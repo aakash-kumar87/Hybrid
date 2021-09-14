@@ -1,0 +1,24 @@
+# Ignore Gradle project-specific cache directory
+.gradle
+
+# Ignore Gradle build output directory
+build
+
+# Add any directories, files, or patterns you don't want to be tracked by version control
+
+logs/
+screenshots/
+test-output/
+
+logs
+screenshots
+test-output
+*.log
+*.jpg
+
+target/
+
+target/classes/
+
+target/test-classes/
+

@@ -1,0 +1,40 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+  
+<suite name="Suite1" verbose="1" >
+  <test name="Test" >
+    <classes>
+       <class name="com.curriculum.testscripts.browsepage.VerifyHeaderAndDescriptionForAOIAndFaculty" />
+       <class name="com.curriculum.testscripts.browsepage.VerifySubjectArea" />
+        <class name="com.curriculum.testscripts.browsepage.VerifyGoToSearchCountValidationForAOI" />
+       <class name="com.curriculum.testscripts.browsepage.VerifyGoToSearchCountValidationForFaculty" />
+        <class name="com.curriculum.testscripts.browsepage.VerifyGoToSearchFilterValidationForAOI" />
+        <class name="com.curriculum.testscripts.browsepage.VerifyGoToSearchFilterValidationForFaculty" />
+        
+       <class name="com.curriculum.testscripts.search.VerifySearchFunctionality" />
+        <class name="com.curriculum.testscripts.search.VerifyFilterCountForUG" />
+       <class name="com.curriculum.testscripts.search.ValidateFiltersForCourses" />
+       <class name="com.curriculum.testscripts.search.ValidateFiltersForPrograms" />
+       <class name="com.curriculum.testscripts.search.ValidateFiltersForSpecialisation" />
+       <class name="com.curriculum.testscripts.search.Verify_Pagination" />
+       <class name="com.curriculum.testscripts.search.VerifyResultsForCoursesBasedonFilterSelection" />
+       <class name="com.curriculum.testscripts.search.VerifyResultsForProgramsBasedonFilterSelection" />
+       <class name="com.curriculum.testscripts.search.VerifyResultsForSpecialisationBasedonFilterSelection" />
+       
+       <class name="com.curriculum.testscripts.homepage.VerifyMyLists" />
+       
+       <class name="com.curriculum.testscripts.hamburger.VerifyMenu" />
+         
+       <class name="com.curriculum.testscripts.factultypage.VerifyToolTips" />
+       
+       <class name="com.curriculum.testscripts.CoursePage.VerifyFees" />
+    </classes>
+  </test>
+ 
+</suite>
+
+
+
+
+
+
+

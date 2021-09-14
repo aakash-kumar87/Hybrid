@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parallel" thread-count="6" parallel="tests">
+
+	<test name="chromeTest" thread-count="2" parallel="classes">
+		<parameter name="environment" value="chrome" />
+		<parameter name="SeleniumGrid" value="true"></parameter>
+		<parameter name="platform" value="win10"></parameter>
+		<groups>
+			<run>
+				<include name="regression" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.curriculum.testscripts.browsepage" />
+			<package name="com.curriculum.testscripts.programpage" />
+			<package name="com.curriculum.testscripts.metaTags" />
+			<package name="com.curriculum.testscripts.homepage" />
+			<package name="com.curriculum.testscripts.CoursePage" />
+			<package name="com.curriculum.testscripts.ResearchPage" />
+			<package name="com.curriculum.testscripts.search" />
+			<package name="com.curriculum.testscripts.specialisationPage" />
+			<package name="com.curriculum.testscripts.academicItems" />
+			<package name="com.curriculum.testscripts.factultypages" />
+			<package name="com.curriculum.testscripts.hamburger" />
+		</packages>
+	</test>
+
+
+	<!-- <test name="edgeTest" thread-count="2" parallel="classes"> -->
+	<!-- <parameter name="environment" value="edge" /> -->
+	<!-- <parameter name="SeleniumGrid" value="true"></parameter> -->
+	<!-- <parameter name="platform" value="win10"></parameter> -->
+	<!-- <groups> -->
+	<!-- <run> -->
+	<!-- <include name="regression" /> -->
+	<!-- </run> -->
+	<!-- </groups> -->
+	<!-- <packages> -->
+	<!-- <package name="com.curriculum.testscripts.browsepage" /> -->
+	<!-- <package name="com.curriculum.testscripts.programpage" /> -->
+	<!-- <package name="com.curriculum.testscripts.metaTags" /> -->
+	<!-- <package name="com.curriculum.testscripts.homepage" /> -->
+	<!-- <package name="com.curriculum.testscripts.CoursePage" /> -->
+	<!-- <package name="com.curriculum.testscripts.ResearchPage" /> -->
+	<!-- <package name="com.curriculum.testscripts.search" /> -->
+	<!-- <package name="com.curriculum.testscripts.specialisationPage" /> -->
+	<!-- <package name="com.curriculum.testscripts.academicItems" /> -->
+	<!-- </packages> -->
+	<!-- </test> -->
+
+
+	<!-- <test name="firefoxTest" thread-count="2" parallel="classes"> -->
+	<!-- <parameter name="environment" value="firefox" /> -->
+	<!-- <parameter name="SeleniumGrid" value="true"></parameter> -->
+	<!-- <parameter name="platform" value="win10"></parameter> -->
+	<!-- <groups> -->
+	<!-- <run> -->
+	<!-- <include name="regression" /> -->
+	<!-- </run> -->
+	<!-- </groups> -->
+	<!-- <packages> -->
+	<!-- <package name="com.curriculum.testscripts.browsepage" /> -->
+	<!-- <package name="com.curriculum.testscripts.programpage" /> -->
+	<!-- <package name="com.curriculum.testscripts.metaTags" /> -->
+	<!-- <package name="com.curriculum.testscripts.homepage" /> -->
+	<!-- <package name="com.curriculum.testscripts.CoursePage" /> -->
+	<!-- <package name="com.curriculum.testscripts.ResearchPage" /> -->
+	<!-- <package name="com.curriculum.testscripts.search" /> -->
+	<!-- <package name="com.curriculum.testscripts.specialisationPage" /> -->
+	<!-- <package name="com.curriculum.testscripts.academicItems" /> -->
+	<!-- </packages> -->
+	<!-- </test> -->
+</suite>
+
+

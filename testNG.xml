@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite1" verbose="1" parallel="none">
+		<test name="Test" preserve-order="true">
+			     <parameter name="environment" value="chrome"/>
+	     <parameter name="url" value="UOWQA"/>
+		  <groups>
+			<run>
+				<include name="regression"/>
+				<include name="smoke" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.lifecycle.testscripts.uow.CreateItem" />
+     		<class name="com.lifecycle.testscripts.uow.Navigation" />
+     		<class name="com.lifecycle.testscripts.uow.CourseInfoSection1Validation" />
+     		<class name="com.lifecycle.testscripts.uow.CourseInfoSection2Validation" />  
+     		<class name="com.lifecycle.testscripts.uow.CourseInfoSection3Validation" /> 
+     		<class name="com.lifecycle.testscripts.uow.CourseInfoSection4Validation" /> 
+     		<class name="com.lifecycle.testscripts.uow.CourseInfoSection5Validation" />
+		</classes>
+		</test>
+</suite>
+
+
+
+
+

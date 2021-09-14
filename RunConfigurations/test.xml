@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Regression" verbose="1">
+	<test name="regression" thread-count="1" parallel="classes">
+		<groups>
+			<run>
+				<include name="regression" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.curriculum.testscripts.browsepage" />
+			<package name="com.curriculum.testscripts.programpage" />
+			<package name="com.curriculum.testscripts.metaTags" />
+			<package name="com.curriculum.testscripts.homepage" />
+			<package name="com.curriculum.testscripts.CoursePage" />
+			<package name="com.curriculum.testscripts.ResearchPage" />
+			<package name="com.curriculum.testscripts.search" />
+			<package name="com.curriculum.testscripts.specialisationPage" />
+			<package name="com.curriculum.testscripts.academicItems" />
+			<package name="com.curriculum.testscripts.factultypages" />
+			<package name="com.curriculum.testscripts.hamburger" />
+		</packages>
+	</test>
+</suite>
